@@ -1,0 +1,110 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Java\jdk1.8.0_45\bin;C:\Program Files\PuTTY\;D:\New folder;D:\New folder\Library\mingw-w64\bin;D:\New folder\Library\usr\bin;D:\New folder\Library\bin;D:\New folder\Scripts;C:\Program Files\Microsoft VS Code\bin;C:\Users\Dennis Effa Amponsah\AppData\Roaming\npm;C:\Users\Dennis Effa Amponsah\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "finance",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+      "jest-expo": "25.0.0",
+      "react-native-scripts": "1.11.1",
+      "react-test-renderer": "16.2.0"
+    },
+    "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+    "scripts": {
+      "start": "react-native-scripts start",
+      "eject": "react-native-scripts eject",
+      "android": "react-native-scripts android",
+      "ios": "react-native-scripts ios",
+      "test": "node node_modules/jest/bin/jest.js"
+    },
+    "jest": {
+      "preset": "jest-expo"
+    },
+    "dependencies": {
+      "expo": "^25.0.0",
+      "firebase": "^4.12.0",
+      "native-base": "^2.4.1",
+      "react": "16.2.0",
+      "react-native": "0.52.0",
+      "react-navigation": "^1.5.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc: Command failed.
+  Exit code: 1
+  Command: C:\Windows\system32\cmd.exe
+  Arguments: /d /s /c .\node_modules\.bin\node-pre-gyp install --fallback-to-build --library=static_library
+  Directory: C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc
+  Output:
+  node-pre-gyp info it worked if it ends with ok
+  node-pre-gyp info using node-pre-gyp@0.7.0
+  node-pre-gyp info using node@8.9.4 | win32 | x64
+  node-pre-gyp info check checked for "C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown\grpc_node.node" (not found)
+  node-pre-gyp http GET https://storage.googleapis.com/grpc-precompiled-binaries/node/grpc/v1.10.1/node-v57-win32-x64-unknown.tar.gz
+  node-pre-gyp ERR! Pre-built binaries not installable for grpc@1.10.1 and node@8.9.4 (node-v57 ABI, unknown) (falling back to source compile with node-gyp) 
+  node-pre-gyp ERR! Hit error getaddrinfo ENOTFOUND storage.googleapis.com storage.googleapis.com:443 
+  
+  C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" clean )  else (node "" clean ) 
+  gyp info it worked if it ends with ok
+  gyp info using node-gyp@3.6.2
+  gyp info using node@8.9.4 | win32 | x64
+  gyp info ok 
+  
+  C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" configure --fallback-to-build --library=static_library "--module=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown\grpc_node.node" --module_name=grpc_node "--module_path=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown" )  else (node "" configure --fallback-to-build --library=static_library "--module=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown\grpc_node.node" --module_name=grpc_node "--module_path=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown" ) 
+  gyp info it worked if it ends with ok
+  gyp info using node-gyp@3.6.2
+  gyp info using node@8.9.4 | win32 | x64
+  gyp ERR! configure error 
+  gyp ERR! stack Error: Can't find Python executable "D:\New folder\python.EXE", you can set the PYTHON env variable.
+  gyp ERR! stack     at PythonFinder.failNoPython (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:483:19)
+  gyp ERR! stack     at PythonFinder.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:508:16)
+  gyp ERR! stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:284:29
+  gyp ERR! stack     at FSReqWrap.oncomplete (fs.js:152:21)
+  gyp ERR! System Windows_NT 10.0.10240
+  gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "configure" "--fallback-to-build" "--library=static_library" "--module=C:\\Users\\Dennis Effa Amponsah\\react_projects\\finance\\node_modules\\grpc\\src\\node\\extension_binary\\node-v57-win32-x64-unknown\\grpc_node.node" "--module_name=grpc_node" "--module_path=C:\\Users\\Dennis Effa Amponsah\\react_projects\\finance\\node_modules\\grpc\\src\\node\\extension_binary\\node-v57-win32-x64-unknown"
+  gyp ERR! cwd C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc
+  gyp ERR! node -v v8.9.4
+  gyp ERR! node-gyp -v v3.6.2
+  gyp ERR! not ok 
+  node-pre-gyp ERR! build error 
+  node-pre-gyp ERR! stack Error: Failed to execute 'node-gyp.cmd configure --fallback-to-build --library=static_library --module=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown\grpc_node.node --module_name=grpc_node --module_path=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown' (1)
+  node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\node-pre-gyp\lib\util\compile.js:83:29)
+  node-pre-gyp ERR! stack     at emitTwo (events.js:126:13)
+  node-pre-gyp ERR! stack     at ChildProcess.emit (events.js:214:7)
+  node-pre-gyp ERR! stack     at maybeClose (internal/child_process.js:925:16)
+  node-pre-gyp ERR! stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  node-pre-gyp ERR! System Windows_NT 10.0.10240
+  node-pre-gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\Dennis Effa Amponsah\\react_projects\\finance\\node_modules\\node-pre-gyp\\bin\\node-pre-gyp" "install" "--fallback-to-build" "--library=static_library"
+  node-pre-gyp ERR! cwd C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc
+  node-pre-gyp ERR! node -v v8.9.4
+  node-pre-gyp ERR! node-pre-gyp -v v0.7.0
+  node-pre-gyp ERR! not ok 
+  Failed to execute 'node-gyp.cmd configure --fallback-to-build --library=static_library --module=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown\grpc_node.node --module_name=grpc_node --module_path=C:\Users\Dennis Effa Amponsah\react_projects\finance\node_modules\grpc\src\node\extension_binary\node-v57-win32-x64-unknown' (1)
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
