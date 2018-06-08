@@ -38,7 +38,7 @@ componentWillMount(){
        
        <Content>
        <Mard/>
-       <Mard />
+    
        </Content>
        
      }
