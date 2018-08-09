@@ -8,9 +8,9 @@ import Verify from './Verify';
 import {Container, Form, Item, Input, Label, Icon} from 'native-base';
 
 const config = {
-  apiKey: "AIzaSyCY39qxeEgh36DhITmafPacLMvVjFL9pzk",
-  authDomain: "earnit-84146.firebaseapp.com",
-  databaseURL: "https://earnit-84146.firebaseio.com",
+  apiKey: "*****",
+  authDomain: "***",
+  databaseURL: "******",
   projectId: "earnit-84146",
   storageBucket: "earnit-84146.appspot.com",
   messagingSenderId: "573432417345"
